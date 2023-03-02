@@ -22,6 +22,7 @@ def test_enigma():
     ]
 
     encrypted = enigma.encrypt(msg, key)
+    assert encrypted == "FUTALDK"
     decrypted = enigma.decrypt(encrypted, key)
     assert decrypted == "MESSAGE"
 
