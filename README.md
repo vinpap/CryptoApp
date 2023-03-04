@@ -13,3 +13,10 @@
  -   Backend in Flask
  -   Frontend in HTML-CSS-JavaScript
 
+<h2>How to run the app</h2>
+
+In the project's root folder, run:
+
+`pip install -r requirements.txt`
+
+`python run_test_server.py`
