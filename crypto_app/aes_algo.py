@@ -34,7 +34,7 @@ class AdvancedEncryptionStandard(EncryptionInterface):
         userKey = bytes(key, encoding='utf-8')
         ctr = Counter.new(128)
         encryptor = AES.new(userKey, AES.MODE_CTR, counter=ctr)
-        encryptedMessage = encryptor.encrypt(message)
+        encryptedMessage = encryptor.encrypt(bytes(message, encoding='utf-8'))
 
 
         return encryptedMessage.hex()
