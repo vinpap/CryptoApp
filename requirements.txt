@@ -4,3 +4,4 @@ Jinja2==3.0.3
 pycipher==0.5.2
 pycryptodome==3.17
 blowfish
+crypto
